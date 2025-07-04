@@ -34,10 +34,10 @@ find "$SRC_DIR" -name "*.md" | while read mdFile; do
     else
     cssStylePath="$ASSETS_DIR/style.css"
     fi
-    echo "cssStylePath: $cssStylePath"
+    # echo "cssStylePath: $cssStylePath"
 
     # 使用 Pandoc 转换
-    echo -e "Converting\n$mdFile\n->\n$outFile\nwith CSS: $cssStylePath"
+    # echo -e "Converting\n$mdFile\n->\n$outFile\nwith CSS: $cssStylePath"
     pandoc "$mdFile" \
       --from markdown \
       --to html5 \
@@ -52,5 +52,5 @@ find "$SRC_DIR" -name "*.md" | while read mdFile; do
 done
 
 echo "✅ 生成 HTML 文件完成，输出目录：$OUT_DIR"
-echo "🧪 构建结果预览："
-find output
+# echo "🧪 构建结果预览："
+# find output

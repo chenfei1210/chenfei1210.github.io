@@ -5,5 +5,14 @@
                 "br"
             ]
         }
-    }
+    },
+    "emeraldwalk.runonsave": {
+        "showElapsed": true,
+        "commands": [
+            {
+                "match": "\\.md$",
+                "cmd": "./build.sh",
+            }
+        ]
+    },
 }
