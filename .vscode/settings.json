@@ -1,13 +1,10 @@
 {
     "markdownlint.config": {
-        "MD033": {
-            "allowed_elements": [
-                "br"
-            ]
-        }
+        "MD033": false
     },
     "emeraldwalk.runonsave": {
         "showElapsed": true,
+        "autoClearConsole": true,
         "commands": [
             {
                 "match": "\\.md$",
