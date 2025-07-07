@@ -31,11 +31,11 @@ jobs:
       - name: 🛠️ Set up Pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
-      - name: ✅ Make build.sh executable
-        run: chmod +x build.sh
+      - name: ✅ Make full_build.sh executable
+        run: chmod +x full_build.sh
 
       - name: 🔧 Run build script
-        run: ./build.sh
+        run: ./full_build.sh
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
