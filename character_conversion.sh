@@ -8,6 +8,8 @@ find . -type f -name "*.md" | while read -r file; do
   -e 's|）|\)|g' \
   -e 's|，|, |g' \
   -e 's|：|: |g' \
+  -e 's|｛|{ |g' \
+  -e 's|｝| }|g' \
   $file
 
 done
