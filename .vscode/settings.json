@@ -8,7 +8,7 @@
         "commands": [
             {
                 "match": "\\.md$",
-                "cmd": "./build_run_on_save.sh ${relativeFile}",
+                "cmd": "./character_conversion.sh  ${relativeFile} && ./build_run_on_save.sh ${relativeFile}",
             }
         ]
     },
