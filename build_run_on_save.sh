@@ -25,9 +25,9 @@ else
 fi
 
 # 删除旧html文件
-if [ -f "$outFile" ]; then
-  rm "$outFile"
-fi
+# if [ -f "$outFile" ]; then
+#   rm "$outFile"
+# fi
 
 # 生成新html文件
 pandoc "$CHANGED_MD_FILE_PATH" \
