@@ -185,6 +185,7 @@
 .markdown-body b,
 .markdown-body strong {
   font-weight: var(--base-text-weight-semibold, 600);
+  color: #f78a47;
 }
 
 .markdown-body dfn {
